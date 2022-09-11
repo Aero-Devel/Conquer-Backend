@@ -54,13 +54,6 @@ internal class GetTokenKtTest {
         assertTrue(lensResult is Success)
     }
 
-    @Test
-    fun postLogin_nonexistingAccount_returns401(){
-        val response = throughGetToken(validRequest)
-        assertThat(response, hasStatus(Status.NOT_FOUND))
-        val shouldExplanation = response.body
-    }
-
     //data class Email(val fullEmailAddr: String)
 
     @Test
