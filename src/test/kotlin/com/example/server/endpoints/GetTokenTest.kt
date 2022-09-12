@@ -56,14 +56,7 @@ internal class GetTokenKtTest {
 
     //data class Email(val fullEmailAddr: String)
 
-    @Test
-    fun postlogin_returns_invalidformat() {
 
-        val body = BadLoginForm("abc", "dfg").asJsonObject().toPrettyString()
-        val request = Request(Method.POST, url).body(body)
-        val response = throughGetToken(request)
-
-    }
 
     // should require form
     // test mail validator and pass validator
