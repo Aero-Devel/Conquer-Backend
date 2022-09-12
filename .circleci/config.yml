@@ -5,5 +5,5 @@ workflows:
   test-with-custom-reports:
     jobs:
       - gradle/test:
-          test_command: myTests
+          test_command: test
           test_results_path: build/test-results/
