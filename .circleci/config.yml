@@ -8,6 +8,3 @@ workflows:
           store_artifacts: build/reports/
           test_command: myTests
           test_results_path: build/test-results/
-    store_test_results:
-      path: test-results
-
